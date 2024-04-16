@@ -1,2 +1,24 @@
-# pagina-web
-Esto es una página web en la cual podrás ver información básica acerca de UTEC Gaming.
+# utec-gaming
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
