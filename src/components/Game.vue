@@ -59,15 +59,15 @@ export default {
 
         "Dragon Ball Fighter Z conserva la esencia de la famosa saga Dragon Ball: espectaculares combates entre poderosos luchadores. Demuestra tus habilidades en este emocionante juego de pelea.",
 
-        "Super Smash Bros Ultimate reúne a una amplia variedad de personajes icónicos de diferentes franquicias de videojuegos. El juego ofrece combates rápidos y emocionantes, con nuevos ataques y opciones defensivas. Los jugadores pueden enfrentarse en batallas uno contra uno o en combates multijugador con hasta ocho jugadores.",
+        "Super Smash Bros. es un juego de lucha crossover que reúne a personajes de diversas franquicias de Nintendo y otras compañías para combatir en escenarios dinámicos. Ofrece modos multijugador y para un solo jugador, enfocándose en la acción y diversión.",
 
-        "Mario Kart 8 Deluxe es un videojuego de carreras donde podrás escoger entre diferentes personajes clásicos de Nintendo y modificar todas las partes de tu kart a tu gusto. El juego ofrece una amplia variedad de modos de juego, incluyendo el modo para un jugador y el modo multijugador. Puedes competir contra la computadora o jugar con hasta 12 jugadores en línea.",
+        "Mario Kart 8 Deluxe es un juego de carreras colorido y frenético protagonizado por los personajes de Nintendo. Con una amplia selección de pistas y modos de juego, ofrece diversión para jugadores de todas las edades.",
 
-        "Crash Team Racing Nitro-Fueled es una versión remasterizada del juego original de Crash Team Racing, lanzado en 1999 para la consola PlayStation. El juego cuenta con una amplia selección de personajes jugables, incluyendo a Crash Bandicoot y sus amigos, así como a sus enemigos. Tendrás diferentes tipos de motor para escoger el que se adapte mejor a tu modo de juego.",
+        "Crash Team Racing Nitro-Fueled es un juego de carreras lleno de adrenalina que ofrece emocionantes pistas y desafíos. Con personajes del universo de Crash Bandicoot, es una experiencia competitiva y divertida para todos.",
 
-        "¡Jonathan Joestar, Jotaro Kujo, DIO, Jolyne Cujoh y otros personajes de JOJO´s Bizarre Adventure se reúnen a través de diferentes generaciones!¡Con 50 personajes jugables de todos los arcos, puedes revivir las batallas más populares de cada historia y ver a los personajes de los diferentes universos interactuar por primera vez!",
+        "JoJo's All Star Battle R es un juego de lucha que celebra el manga/anime 'JoJo's Bizarre Adventure'. Presenta personajes de todas las sagas enfrentándose en combates estilizados con habilidades únicas y movimientos dramáticos.",
 
-        "Ambientado en el apocalipsis zombi, Left 4 Dead 2 (L4D2) es la esperadísima secuela del galardonado Left 4 Dead, el juego cooperativo número 1 de 2008. Este FPS cooperativo de acción y terror te llevará a ti y a tus amigos por las ciudades, pantanos y cementerios donde tendrán que enfrentar diferentes tipos de hordas de infectados, infectados especiales y el poderoso Tank! Podrán reunir un gran arsenal de armas para defenderse, pero lo más importante es el trabajo en equipo.",
+        "Left 4 Dead 2 es un juego de disparos en primera persona cooperativo que enfrenta a los jugadores contra hordas de zombis en una lucha por la supervivencia a través de distintos escenarios post-apocalípticos. Incluye nuevas armas, campañas y modos de juego.",
 
         "Como parte de la franquicia Pokémon, Pokémon GO es un popular juego de realidad aumentada con el objetivo de que los jugadores usen configuraciones basadas en la ubicación del GPS para atrapar y entrenar personajes Pokémon.",
       ],
@@ -141,10 +141,9 @@ export default {
 }
 
 .game-description {
-  /* ... otras propiedades ... */
-  overflow: hidden; /* Oculta el texto que no cabe en el contenedor */
-  text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto */
-  max-width: 100%; /* Asegura que el texto no desborde el contenedor */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .game h1 {
@@ -199,9 +198,14 @@ export default {
     text-align: center;
     height: initial;
     padding: 0em 0em 1em 2em;
+    min-height: 600px;
   }
   .card h1 {
     margin-top: 1em;
+    line-height: 1em;
+  }
+  .card p{
+    font-size: 1em;
   }
   .game-details,
   .game-img-cnt {
@@ -215,8 +219,24 @@ export default {
 }
 
 @media screen and (max-width: 700px) {
+  .card {
+    padding: 0;
+    min-height: 550px;
+  }
+  .card h1 {
+    margin-top: 0.5em;
+    line-height: 1em;
+    font-size: 2em;
+  }
+  .card p {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
   .game-slider {
     font-size: 13px;
+  }
+  .game-img {
+    height: 180px;
   }
 }
 </style>

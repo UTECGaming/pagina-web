@@ -90,5 +90,10 @@ export default {
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
+@media screen and (max-width: 700px) {
+  .img-container {
+    height: 50vh;
+  }
+}
 </style>
   
